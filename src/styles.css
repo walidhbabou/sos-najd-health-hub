@@ -45,6 +45,11 @@
   --gradient-accent: linear-gradient(135deg, var(--accent), oklch(0.88 0.18 90));
 
   --animate-pulse-ring: pulse-ring 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  --animate-fade-up: fade-up 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-shimmer: shimmer 3s linear infinite;
+  --animate-siren: siren 1.4s ease-in-out infinite;
+  --animate-marquee: marquee 30s linear infinite;
 }
 
 :root {
@@ -92,6 +97,54 @@
   0% { box-shadow: 0 0 0 0 color-mix(in oklab, var(--emergency) 70%, transparent); }
   70% { box-shadow: 0 0 0 20px color-mix(in oklab, var(--emergency) 0%, transparent); }
   100% { box-shadow: 0 0 0 0 color-mix(in oklab, var(--emergency) 0%, transparent); }
+}
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+@keyframes siren {
+  0%, 100% { opacity: 1; filter: drop-shadow(0 0 8px var(--emergency)); }
+  50% { opacity: 0.55; filter: drop-shadow(0 0 16px var(--emergency)); }
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+.text-gradient-accent {
+  background: linear-gradient(135deg, var(--accent) 0%, oklch(0.92 0.14 92) 50%, var(--accent) 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: shimmer 4s linear infinite;
+}
+
+.bg-grid {
+  background-image:
+    linear-gradient(to right, color-mix(in oklab, var(--primary-foreground) 6%, transparent) 1px, transparent 1px),
+    linear-gradient(to bottom, color-mix(in oklab, var(--primary-foreground) 6%, transparent) 1px, transparent 1px);
+  background-size: 48px 48px;
+  mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, black 30%, transparent 80%);
+}
+
+.glass {
+  background: color-mix(in oklab, var(--card) 70%, transparent);
+  backdrop-filter: blur(12px);
+  border: 1px solid color-mix(in oklab, var(--border) 60%, transparent);
 }
 
 @layer base {
