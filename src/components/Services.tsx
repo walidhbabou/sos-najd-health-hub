@@ -39,18 +39,27 @@ export function Services() {
         </div>
 
         <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {services.map(({ icon: Icon, title, desc }) => (
+          {services.map(({ icon: Icon, title, desc }, i) => (
             <article
               key={title}
-              className="group relative overflow-hidden rounded-2xl border border-border/60 bg-card p-7 shadow-soft transition-all hover:-translate-y-2 hover:shadow-elevated"
+              className="group relative overflow-hidden rounded-2xl border border-border/60 bg-card p-7 shadow-soft transition-all duration-500 hover:-translate-y-2 hover:border-accent/60 hover:shadow-elevated"
             >
-              <div className="absolute right-0 top-0 h-24 w-24 -translate-y-12 translate-x-12 rounded-full bg-accent/10 transition-transform duration-500 group-hover:scale-150" />
+              {/* gradient hover overlay */}
+              <div className="absolute inset-0 -z-10 bg-gradient-to-br from-primary to-primary-glow opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
+              <div className="absolute right-0 top-0 h-32 w-32 -translate-y-16 translate-x-16 rounded-full bg-accent/20 blur-2xl transition-all duration-700 group-hover:scale-150 group-hover:bg-accent/40" />
               <div className="relative">
-                <div className="mb-5 inline-flex h-14 w-14 items-center justify-center rounded-xl bg-gradient-to-br from-primary to-primary-glow text-primary-foreground shadow-soft">
+                <div className="mb-5 inline-flex h-14 w-14 items-center justify-center rounded-xl bg-gradient-to-br from-primary to-primary-glow text-primary-foreground shadow-soft transition-all duration-500 group-hover:bg-accent group-hover:from-accent group-hover:to-accent group-hover:text-accent-foreground group-hover:shadow-glow">
                   <Icon className="h-7 w-7" />
                 </div>
-                <h3 className="font-display text-xl font-bold text-foreground">{title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{desc}</p>
+                <div className="mb-2 text-xs font-bold tracking-widest text-accent-foreground/0 transition-colors group-hover:text-accent">
+                  0{i + 1}
+                </div>
+                <h3 className="font-display text-xl font-bold text-foreground transition-colors group-hover:text-primary-foreground">
+                  {title}
+                </h3>
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground transition-colors group-hover:text-primary-foreground/85">
+                  {desc}
+                </p>
               </div>
             </article>
           ))}
