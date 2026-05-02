@@ -1,0 +1,45 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+// Use SQLite for quick local dev. Replace provider/url for PostgreSQL in production.
+datasource db {
+  provider = env("PRISMA_PROVIDER")
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        String   @id @default(cuid())
+  email     String   @unique
+  name      String?
+  role      UserRole @default(PATIENT)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  appointments Appointment[]
+}
+
+model Appointment {
+  id         String   @id @default(cuid())
+  patient    User     @relation(fields: [patientId], references: [id])
+  patientId  String
+  doctor     User     @relation(fields: [doctorId], references: [id])
+  doctorId   String
+  startAt    DateTime
+  endAt      DateTime
+  status     AppointmentStatus @default(PENDING)
+  notes      String?
+  createdAt  DateTime @default(now())
+}
+
+enum UserRole {
+  ADMIN
+  DOCTOR
+  PATIENT
+}
+
+enum AppointmentStatus {
+  PENDING
+  APPROVED
+  CANCELLED
+  COMPLETED
+}

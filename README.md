@@ -1,3 +1,38 @@
+# Health Hub — Next.js Healthcare Platform (Scaffold)
+
+This repository is a scaffold for a modern healthcare web application built with Next.js (App Router), TypeScript and Tailwind.
+
+Quick start
+
+1. Copy environment template:
+
+```bash
+cp .env.example .env
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+# or yarn
+```
+
+3. Initialize Prisma (optional):
+
+```bash
+npx prisma generate
+npx prisma migrate dev --name init
+```
+
+4. Run the dev server:
+
+```bash
+npm run dev
+```
+
+Notes
+- The project includes Prisma schema configured to support SQLite (dev) or PostgreSQL (production).
+- Authentication, OpenAI integration, and DB-backed CRUD are scaffolded; replace stubs with your secrets and providers.
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
