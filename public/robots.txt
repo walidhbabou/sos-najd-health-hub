@@ -1,0 +1,5 @@
+
+User-agent: *
+Allow: /
+Sitemap: https://sosnajdmaroc.com/sitemap.xml
+Host: sosnajdmaroc.com

@@ -1,6 +1,5 @@
 import { Zap, ShieldCheck, Clock3 } from "lucide-react";
 import { StarOfLife } from "./StarOfLife";
-import paramedicImg from "@/assets/paramedic.jpg";
 
 const values = [
   { icon: Zap, title: "Rapidité", desc: "Intervention en moins de 15 minutes sur Casablanca." },
@@ -19,7 +18,7 @@ export function About() {
         <div className="relative lg:col-span-5">
           <div className="relative overflow-hidden rounded-3xl shadow-elevated">
             <img
-              src={paramedicImg}
+              src="/images/paramedic.jpg"
               alt="Équipe paramédicale SOS Najd Assistance"
               width={896}
               height={1184}
@@ -41,7 +40,7 @@ export function About() {
           {/* Floating stat card */}
           <div className="absolute -right-4 -top-6 hidden rounded-2xl border border-border bg-card p-5 shadow-elevated md:block">
             <div className="font-display text-3xl font-extrabold text-primary">15+</div>
-            <div className="text-xs uppercase tracking-widest text-muted-foreground">Années d'expérience</div>
+            <div className="text-xs uppercase tracking-widest text-muted-foreground">Années d&apos;expérience</div>
           </div>
           <div className="absolute -bottom-6 -left-4 hidden rounded-2xl bg-accent p-5 shadow-elevated md:block">
             <div className="font-display text-3xl font-extrabold text-accent-foreground">24/7</div>
@@ -56,11 +55,11 @@ export function About() {
             <span className="text-primary">À propos</span>
           </div>
           <h2 className="font-display text-3xl font-bold leading-tight text-foreground md:text-5xl">
-            Votre partenaire santé d'urgence à <span className="text-primary">Casablanca</span>
+            Votre partenaire santé d&apos;urgence à <span className="text-primary">Casablanca</span>
           </h2>
           <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
             <strong className="text-foreground">SOS Najd Assistance</strong> est un service professionnel
-            d'assistance médicale basé à Casablanca, offrant des interventions rapides 24h/24 et 7j/7.
+            d&apos;assistance médicale basé à Casablanca, offrant des interventions rapides 24h/24 et 7j/7.
             Nous mettons à votre disposition des ambulances équipées, des médecins qualifiés
             et un service complet de pompes funèbres musulmanes.
           </p>
