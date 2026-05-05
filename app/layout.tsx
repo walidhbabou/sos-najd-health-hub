@@ -16,8 +16,6 @@ const inter = Inter({
   display: "swap",
 });
 
-export const metadataBase = new URL("https://sosnajdmaroc.com");
-
 export const metadata: Metadata = {
   title: {
     default: "SOS Najd Assistance — Ambulance & Assistance médicale Maroc",
