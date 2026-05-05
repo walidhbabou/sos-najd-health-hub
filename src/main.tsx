@@ -15,8 +15,8 @@ ReactDOM.createRoot(rootElement).render(
   <React.StrictMode>
     <Header />
     <main>
-        <Hero />
-      </main>
+      <Hero />
+    </main>
     <Footer />
-  </React.StrictMode>
+  </React.StrictMode>,
 );
