@@ -36,7 +36,7 @@ export function Hero() {
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent opacity-75" />
               <span className="relative inline-flex h-2 w-2 rounded-full bg-accent" />
             </span>
-            Disponible 24h/24 — 7j/7
+            Urgent 24h/24 — 7j/7
           </div>
 
           <h1 className="font-display text-5xl font-extrabold leading-[1.05] tracking-tight md:text-6xl lg:text-7xl">
