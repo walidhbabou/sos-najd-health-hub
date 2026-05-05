@@ -8,7 +8,9 @@ export function Contact() {
     <section id="contact" className="bg-background py-20 md:py-28">
       <div className="container mx-auto px-4">
         <div className="mx-auto max-w-2xl text-center">
-          <div className="mb-4 text-sm font-semibold uppercase tracking-widest text-primary">Contact rapide</div>
+          <div className="mb-4 text-sm font-semibold uppercase tracking-widest text-primary">
+            Contact rapide
+          </div>
           <h2 className="font-display text-3xl font-bold text-foreground md:text-5xl">
             Une urgence ? Contactez-nous
           </h2>
@@ -24,24 +26,39 @@ export function Contact() {
               <li className="flex items-start gap-4">
                 <User className="mt-0.5 h-6 w-6 shrink-0 text-accent" />
                 <div>
-                  <div className="text-xs uppercase tracking-wider text-primary-foreground/60">Responsable</div>
+                  <div className="text-xs uppercase tracking-wider text-primary-foreground/60">
+                    Responsable
+                  </div>
                   <div className="font-semibold">Ganian Abdelali</div>
                 </div>
               </li>
               <li className="flex items-start gap-4">
                 <Phone className="mt-0.5 h-6 w-6 shrink-0 text-accent" />
                 <div>
-                  <div className="text-xs uppercase tracking-wider text-primary-foreground/60">Téléphones</div>
+                  <div className="text-xs uppercase tracking-wider text-primary-foreground/60">
+                    Téléphones
+                  </div>
                   {phones.map((p, i) => (
-                    <a key={p} href={`tel:${phonesTel[i]}`} className="block font-semibold hover:text-accent">{p}</a>
+                    <a
+                      key={p}
+                      href={`tel:${phonesTel[i]}`}
+                      className="block font-semibold hover:text-accent"
+                    >
+                      {p}
+                    </a>
                   ))}
                 </div>
               </li>
               <li className="flex items-start gap-4">
                 <Mail className="mt-0.5 h-6 w-6 shrink-0 text-accent" />
                 <div>
-                  <div className="text-xs uppercase tracking-wider text-primary-foreground/60">Email</div>
-                  <a href="mailto:najd.assistance@hotmail.com" className="font-semibold break-all hover:text-accent">
+                  <div className="text-xs uppercase tracking-wider text-primary-foreground/60">
+                    Email
+                  </div>
+                  <a
+                    href="mailto:najd.assistance@hotmail.com"
+                    className="font-semibold break-all hover:text-accent"
+                  >
                     najd.assistance@hotmail.com
                   </a>
                 </div>
@@ -49,8 +66,12 @@ export function Contact() {
               <li className="flex items-start gap-4">
                 <MapPin className="mt-0.5 h-6 w-6 shrink-0 text-accent" />
                 <div>
-                  <div className="text-xs uppercase tracking-wider text-primary-foreground/60">Adresse</div>
-                  <div className="font-semibold">46 rue des hôpitaux, quartier des hôpitaux, Casablanca</div>
+                  <div className="text-xs uppercase tracking-wider text-primary-foreground/60">
+                    Adresse
+                  </div>
+                  <div className="font-semibold">
+                    46 rue des hôpitaux, quartier des hôpitaux, Casablanca
+                  </div>
                 </div>
               </li>
             </ul>

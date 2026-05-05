@@ -29,7 +29,9 @@ export function Services() {
       <div className="absolute inset-0 -z-10 opacity-40 [background:radial-gradient(circle_at_20%_0%,color-mix(in_oklab,var(--accent)_15%,transparent),transparent_50%)]" />
       <div className="container mx-auto px-4">
         <div className="mx-auto max-w-2xl text-center">
-          <div className="mb-4 text-sm font-semibold uppercase tracking-widest text-primary">Nos services</div>
+          <div className="mb-4 text-sm font-semibold uppercase tracking-widest text-primary">
+            Nos services
+          </div>
           <h2 className="font-display text-3xl font-bold text-foreground md:text-5xl">
             Une assistance complète, à chaque instant
           </h2>

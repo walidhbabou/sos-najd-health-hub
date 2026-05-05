@@ -27,7 +27,10 @@ export function Hero() {
       </div>
 
       <div className="container mx-auto px-4 pb-24 pt-24 md:pb-32 md:pt-32 lg:pb-40 lg:pt-36">
-        <div className="max-w-3xl text-primary-foreground" style={{ animation: "var(--animate-fade-up)" }}>
+        <div
+          className="max-w-3xl text-primary-foreground"
+          style={{ animation: "var(--animate-fade-up)" }}
+        >
           <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-accent/40 bg-accent/15 px-4 py-1.5 text-sm font-medium text-accent backdrop-blur">
             <span className="relative flex h-2 w-2">
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent opacity-75" />
@@ -44,7 +47,8 @@ export function Hero() {
           </h1>
 
           <p className="mt-7 max-w-2xl text-lg text-primary-foreground/85 md:text-xl">
-            Ambulances · Assistance médicale à domicile · SOS médecins · Pompes funèbres musulmanes — Casablanca et région.
+            Ambulances · Assistance médicale à domicile · SOS médecins · Pompes funèbres musulmanes
+            — Casablanca et région.
           </p>
 
           <div className="mt-10 flex flex-col gap-4 sm:flex-row">
@@ -74,7 +78,9 @@ export function Hero() {
             ].map(({ icon: Icon, label, value }) => (
               <div key={label}>
                 <Icon className="mb-2 h-5 w-5 text-accent" />
-                <dt className="text-xs uppercase tracking-wider text-primary-foreground/60">{label}</dt>
+                <dt className="text-xs uppercase tracking-wider text-primary-foreground/60">
+                  {label}
+                </dt>
                 <dd className="font-display text-xl font-bold md:text-2xl">{value}</dd>
               </div>
             ))}
@@ -84,9 +90,15 @@ export function Hero() {
 
       {/* Marquee urgence band */}
       <div className="relative overflow-hidden border-y border-accent/20 bg-emergency text-emergency-foreground">
-        <div className="flex whitespace-nowrap py-3" style={{ animation: "var(--animate-marquee)" }}>
+        <div
+          className="flex whitespace-nowrap py-3"
+          style={{ animation: "var(--animate-marquee)" }}
+        >
           {Array.from({ length: 2 }).map((_, k) => (
-            <div key={k} className="flex shrink-0 items-center gap-10 px-5 text-sm font-semibold uppercase tracking-widest">
+            <div
+              key={k}
+              className="flex shrink-0 items-center gap-10 px-5 text-sm font-semibold uppercase tracking-widest"
+            >
               {[
                 "Urgence 24/7",
                 "Ambulances équipées",

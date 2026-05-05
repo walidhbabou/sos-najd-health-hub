@@ -33,8 +33,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: "SOS Najd Assistance — Assistance Médicale 24/7 Maroc",
-    description:
-      "Ambulances, SOS médecins et assistance à domicile dans tout le Maroc.",
+    description: "Ambulances, SOS médecins et assistance à domicile dans tout le Maroc.",
     type: "website",
     locale: "fr_MA",
     url: "https://sosnajdmaroc.com",
@@ -44,8 +43,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "SOS Najd Assistance — Assistance Médicale Maroc",
-    description:
-      "Intervention ambulance et SOS médecin 24/7 dans tout le Maroc.",
+    description: "Intervention ambulance et SOS médecin 24/7 dans tout le Maroc.",
     images: ["/images/hero-ambulance.jpg"],
   },
   alternates: {
@@ -65,11 +63,7 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="fr" className={`${poppins.variable} ${inter.variable}`}>
       <body>{children}</body>

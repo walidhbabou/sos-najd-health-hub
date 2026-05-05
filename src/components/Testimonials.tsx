@@ -23,7 +23,9 @@ export function Testimonials() {
     <section id="testimonials" className="bg-secondary py-20 md:py-28">
       <div className="container mx-auto px-4">
         <div className="mx-auto max-w-2xl text-center">
-          <div className="mb-4 text-sm font-semibold uppercase tracking-widest text-primary">Témoignages</div>
+          <div className="mb-4 text-sm font-semibold uppercase tracking-widest text-primary">
+            Témoignages
+          </div>
           <h2 className="font-display text-3xl font-bold text-foreground md:text-5xl">
             Ils nous ont fait confiance
           </h2>

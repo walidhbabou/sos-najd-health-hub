@@ -11,14 +11,27 @@ export function Header() {
           </span>
           <div className="leading-tight">
             <div className="font-display text-base font-bold text-primary">SOS Najd</div>
-            <div className="text-[10px] uppercase tracking-widest text-muted-foreground">Assistance</div>
+            <div className="text-[10px] uppercase tracking-widest text-muted-foreground">
+              Assistance
+            </div>
           </div>
         </a>
         <nav className="hidden gap-7 text-sm font-medium md:flex">
-          <a href="#about" className="text-foreground/80 transition-colors hover:text-primary">À propos</a>
-          <a href="#services" className="text-foreground/80 transition-colors hover:text-primary">Services</a>
-          <a href="#contact" className="text-foreground/80 transition-colors hover:text-primary">Contact</a>
-          <a href="#testimonials" className="text-foreground/80 transition-colors hover:text-primary">Avis</a>
+          <a href="#about" className="text-foreground/80 transition-colors hover:text-primary">
+            À propos
+          </a>
+          <a href="#services" className="text-foreground/80 transition-colors hover:text-primary">
+            Services
+          </a>
+          <a href="#contact" className="text-foreground/80 transition-colors hover:text-primary">
+            Contact
+          </a>
+          <a
+            href="#testimonials"
+            className="text-foreground/80 transition-colors hover:text-primary"
+          >
+            Avis
+          </a>
         </nav>
         <a
           href="tel:+212522272739"

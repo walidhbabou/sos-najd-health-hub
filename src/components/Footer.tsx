@@ -7,10 +7,14 @@ export function Footer() {
       <div className="container mx-auto grid gap-10 px-4 py-16 md:grid-cols-4">
         <div className="md:col-span-2">
           <div className="flex items-center gap-3">
-            <span className="text-accent"><StarOfLife size={36} /></span>
+            <span className="text-accent">
+              <StarOfLife size={36} />
+            </span>
             <div>
               <div className="font-display text-xl font-bold">SOS Najd Assistance</div>
-              <div className="text-xs uppercase tracking-widest text-primary-foreground/60">Assistance Médicale 24/7</div>
+              <div className="text-xs uppercase tracking-widest text-primary-foreground/60">
+                Assistance Médicale 24/7
+              </div>
             </div>
           </div>
           <p className="mt-5 max-w-md text-sm text-primary-foreground/75">
@@ -29,7 +33,9 @@ export function Footer() {
         </div>
 
         <div>
-          <h4 className="font-display text-sm font-bold uppercase tracking-widest text-accent">Services</h4>
+          <h4 className="font-display text-sm font-bold uppercase tracking-widest text-accent">
+            Services
+          </h4>
           <ul className="mt-4 space-y-2 text-sm text-primary-foreground/80">
             <li>Ambulances</li>
             <li>Assistance à domicile</li>
@@ -39,19 +45,27 @@ export function Footer() {
         </div>
 
         <div>
-          <h4 className="font-display text-sm font-bold uppercase tracking-widest text-accent">Contact</h4>
+          <h4 className="font-display text-sm font-bold uppercase tracking-widest text-accent">
+            Contact
+          </h4>
           <ul className="mt-4 space-y-3 text-sm">
             <li className="flex items-start gap-2">
               <Phone className="mt-0.5 h-4 w-4 shrink-0 text-accent" />
-              <a href="tel:+212522272739" className="hover:text-accent">+212 5 22 27 27 39</a>
+              <a href="tel:+212522272739" className="hover:text-accent">
+                +212 5 22 27 27 39
+              </a>
             </li>
             <li className="flex items-start gap-2">
               <Phone className="mt-0.5 h-4 w-4 shrink-0 text-accent" />
-              <a href="tel:+212668703681" className="hover:text-accent">+212 6 68 70 36 81</a>
+              <a href="tel:+212668703681" className="hover:text-accent">
+                +212 6 68 70 36 81
+              </a>
             </li>
             <li className="flex items-start gap-2">
               <Mail className="mt-0.5 h-4 w-4 shrink-0 text-accent" />
-              <a href="mailto:najd.assistance@hotmail.com" className="break-all hover:text-accent">najd.assistance@hotmail.com</a>
+              <a href="mailto:najd.assistance@hotmail.com" className="break-all hover:text-accent">
+                najd.assistance@hotmail.com
+              </a>
             </li>
             <li className="flex items-start gap-2">
               <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-accent" />
