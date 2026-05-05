@@ -11,8 +11,7 @@ import { generateMetadata } from "@/lib/seo";
 
 export const metadata = generateMetadata({
   title: "Accueil",
-  description:
-    "SOS Najd — Ambulance et assistance médicale dans tout le Maroc. Intervention 24/7.",
+  description: "SOS Najd — Ambulance et assistance médicale dans tout le Maroc. Intervention 24/7.",
   path: "/",
 });
 

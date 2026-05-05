@@ -40,7 +40,7 @@
   --shadow-elevated: 0 20px 50px -20px color-mix(in oklab, var(--primary) 35%, transparent);
   --shadow-glow: 0 0 40px color-mix(in oklab, var(--accent) 50%, transparent);
 
-  --gradient-hero: linear-gradient(135deg, oklch(0.28 0.13 264) 0%, oklch(0.20 0.10 264) 100%);
+  --gradient-hero: linear-gradient(135deg, oklch(0.28 0.13 264) 0%, oklch(0.2 0.1 264) 100%);
   --gradient-primary: linear-gradient(135deg, var(--primary), var(--primary-glow));
   --gradient-accent: linear-gradient(135deg, var(--accent), oklch(0.88 0.18 90));
 
@@ -56,13 +56,13 @@
   --radius: 0.75rem;
 
   --background: oklch(0.99 0.005 250);
-  --foreground: oklch(0.20 0.05 264);
+  --foreground: oklch(0.2 0.05 264);
 
   --card: oklch(1 0 0);
-  --card-foreground: oklch(0.20 0.05 264);
+  --card-foreground: oklch(0.2 0.05 264);
 
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.20 0.05 264);
+  --popover-foreground: oklch(0.2 0.05 264);
 
   /* Medical blue #1E3A8A */
   --primary: oklch(0.34 0.14 264);
@@ -74,10 +74,10 @@
 
   /* Yellow #FACC15 */
   --accent: oklch(0.86 0.17 92);
-  --accent-foreground: oklch(0.20 0.05 264);
+  --accent-foreground: oklch(0.2 0.05 264);
 
   --muted: oklch(0.96 0.01 250);
-  --muted-foreground: oklch(0.50 0.03 257);
+  --muted-foreground: oklch(0.5 0.03 257);
 
   --destructive: oklch(0.58 0.24 27);
   --destructive-foreground: oklch(0.99 0 0);
@@ -94,38 +94,75 @@
 }
 
 @keyframes pulse-ring {
-  0% { box-shadow: 0 0 0 0 color-mix(in oklab, var(--emergency) 70%, transparent); }
-  70% { box-shadow: 0 0 0 20px color-mix(in oklab, var(--emergency) 0%, transparent); }
-  100% { box-shadow: 0 0 0 0 color-mix(in oklab, var(--emergency) 0%, transparent); }
+  0% {
+    box-shadow: 0 0 0 0 color-mix(in oklab, var(--emergency) 70%, transparent);
+  }
+  70% {
+    box-shadow: 0 0 0 20px color-mix(in oklab, var(--emergency) 0%, transparent);
+  }
+  100% {
+    box-shadow: 0 0 0 0 color-mix(in oklab, var(--emergency) 0%, transparent);
+  }
 }
 
 @keyframes fade-up {
-  from { opacity: 0; transform: translateY(24px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-12px); }
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
 }
 
 @keyframes shimmer {
-  0% { background-position: -200% 0; }
-  100% { background-position: 200% 0; }
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
 }
 
 @keyframes siren {
-  0%, 100% { opacity: 1; filter: drop-shadow(0 0 8px var(--emergency)); }
-  50% { opacity: 0.55; filter: drop-shadow(0 0 16px var(--emergency)); }
+  0%,
+  100% {
+    opacity: 1;
+    filter: drop-shadow(0 0 8px var(--emergency));
+  }
+  50% {
+    opacity: 0.55;
+    filter: drop-shadow(0 0 16px var(--emergency));
+  }
 }
 
 @keyframes marquee {
-  from { transform: translateX(0); }
-  to { transform: translateX(-50%); }
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
 }
 
 .text-gradient-accent {
-  background: linear-gradient(135deg, var(--accent) 0%, oklch(0.92 0.14 92) 50%, var(--accent) 100%);
+  background: linear-gradient(
+    135deg,
+    var(--accent) 0%,
+    oklch(0.92 0.14 92) 50%,
+    var(--accent) 100%
+  );
   background-size: 200% auto;
   -webkit-background-clip: text;
   background-clip: text;
@@ -135,8 +172,16 @@
 
 .bg-grid {
   background-image:
-    linear-gradient(to right, color-mix(in oklab, var(--primary-foreground) 6%, transparent) 1px, transparent 1px),
-    linear-gradient(to bottom, color-mix(in oklab, var(--primary-foreground) 6%, transparent) 1px, transparent 1px);
+    linear-gradient(
+      to right,
+      color-mix(in oklab, var(--primary-foreground) 6%, transparent) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      to bottom,
+      color-mix(in oklab, var(--primary-foreground) 6%, transparent) 1px,
+      transparent 1px
+    );
   background-size: 48px 48px;
   mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, black 30%, transparent 80%);
 }
@@ -162,7 +207,10 @@
     font-family: var(--font-sans);
   }
 
-  h1, h2, h3, h4 {
+  h1,
+  h2,
+  h3,
+  h4 {
     font-family: var(--font-display);
     letter-spacing: -0.02em;
   }

@@ -3,8 +3,16 @@ import { StarOfLife } from "./StarOfLife";
 
 const values = [
   { icon: Zap, title: "Rapidité", desc: "Intervention en moins de 15 minutes sur Casablanca." },
-  { icon: Clock3, title: "Disponibilité", desc: "Une équipe mobilisée 24h/24 et 7j/7, jours fériés inclus." },
-  { icon: ShieldCheck, title: "Professionnalisme", desc: "Personnel diplômé et matériel médical certifié." },
+  {
+    icon: Clock3,
+    title: "Disponibilité",
+    desc: "Une équipe mobilisée 24h/24 et 7j/7, jours fériés inclus.",
+  },
+  {
+    icon: ShieldCheck,
+    title: "Professionnalisme",
+    desc: "Personnel diplômé et matériel médical certifié.",
+  },
 ];
 
 export function About() {
@@ -31,8 +39,12 @@ export function About() {
                 <StarOfLife size={26} />
               </div>
               <div>
-                <div className="text-xs uppercase tracking-widest text-muted-foreground">Équipe certifiée</div>
-                <div className="font-display font-bold text-foreground">Personnel médical qualifié</div>
+                <div className="text-xs uppercase tracking-widest text-muted-foreground">
+                  Équipe certifiée
+                </div>
+                <div className="font-display font-bold text-foreground">
+                  Personnel médical qualifié
+                </div>
               </div>
             </div>
           </div>
@@ -40,28 +52,34 @@ export function About() {
           {/* Floating stat card */}
           <div className="absolute -right-4 -top-6 hidden rounded-2xl border border-border bg-card p-5 shadow-elevated md:block">
             <div className="font-display text-3xl font-extrabold text-primary">15+</div>
-            <div className="text-xs uppercase tracking-widest text-muted-foreground">Années d&apos;expérience</div>
+            <div className="text-xs uppercase tracking-widest text-muted-foreground">
+              Années d&apos;expérience
+            </div>
           </div>
           <div className="absolute -bottom-6 -left-4 hidden rounded-2xl bg-accent p-5 shadow-elevated md:block">
             <div className="font-display text-3xl font-extrabold text-accent-foreground">24/7</div>
-            <div className="text-xs uppercase tracking-widest text-accent-foreground/80">Toujours disponibles</div>
+            <div className="text-xs uppercase tracking-widest text-accent-foreground/80">
+              Toujours disponibles
+            </div>
           </div>
         </div>
 
         {/* Text side */}
         <div className="lg:col-span-7">
           <div className="mb-4 inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-widest">
-            <span className="text-primary"><StarOfLife size={20} /></span>
+            <span className="text-primary">
+              <StarOfLife size={20} />
+            </span>
             <span className="text-primary">À propos</span>
           </div>
           <h2 className="font-display text-3xl font-bold leading-tight text-foreground md:text-5xl">
             Votre partenaire santé d&apos;urgence à <span className="text-primary">Casablanca</span>
           </h2>
           <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
-            <strong className="text-foreground">SOS Najd Assistance</strong> est un service professionnel
-            d&apos;assistance médicale basé à Casablanca, offrant des interventions rapides 24h/24 et 7j/7.
-            Nous mettons à votre disposition des ambulances équipées, des médecins qualifiés
-            et un service complet de pompes funèbres musulmanes.
+            <strong className="text-foreground">SOS Najd Assistance</strong> est un service
+            professionnel d&apos;assistance médicale basé à Casablanca, offrant des interventions
+            rapides 24h/24 et 7j/7. Nous mettons à votre disposition des ambulances équipées, des
+            médecins qualifiés et un service complet de pompes funèbres musulmanes.
           </p>
 
           <div className="mt-8 grid gap-4">
