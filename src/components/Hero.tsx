@@ -1,5 +1,4 @@
 import { Phone, Ambulance, Clock, ChevronRight } from "lucide-react";
-import heroImg from "@/assets/hero-ambulance.jpg";
 import { StarOfLife } from "./StarOfLife";
 
 export function Hero() {
@@ -8,7 +7,7 @@ export function Hero() {
       {/* Background image + gradients */}
       <div className="absolute inset-0 -z-10">
         <img
-          src={heroImg}
+          src="/images/hero-ambulance.jpg"
           alt="Ambulance SOS Najd Assistance en intervention à Casablanca"
           width={1920}
           height={1080}
